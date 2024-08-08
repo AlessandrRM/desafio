@@ -1,0 +1,27 @@
+
+calcular(70,30)
+calcular(50,50)
+calcular(90,10)
+
+function calcular (vitoria, derrota) {
+let formula = vitoria - derrota
+let partida = vitoria + derrota
+console.log ("Sua pontuação foi de:", formula, "e todas as partidas foram", partida )
+if(formula<=10){
+    console.log("Sua classificação é de ferro")
+}
+else if (formula >= 11 && formula <= 20) {
+    console.log("Sua classificação é bronze")
+} 
+else if (formula >= 21 && formula <= 50) {
+    console.log("Sua classificação é prata")
+} else if (formula >= 51 && formula <= 80) {
+    console.log("Sua classificação é ouro")
+} else if (formula >= 81 && formula <= 90) {
+    console.log("Sua classificação é diamante")
+} else if (formula >= 91 && formula <= 100) {
+    console.log("Sua classificação é lendário")
+} else if (formula >101) {
+    console.log("Sua classificação é imortal")
+} else {console.log("Você não joga jogo né?")}
+}
